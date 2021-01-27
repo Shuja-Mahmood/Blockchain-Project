@@ -1,0 +1,1 @@
+geth --networkid 4224 --datadir ".\Miner\\" --nodiscover --port 30305 --unlock "0x51A4F2845DB5540eF1396e8c8216c6b7C5661826" --password ./password.sec --allow-insecure-unlock --ipcdisable console

@@ -1,0 +1,8 @@
+=============== Jan 28, 2021 (PKT) ===============
+01:24:08.365256 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+01:24:08.369258 db@open opening
+01:24:08.369258 version@stat F·[] S·0B[] Sc·[]
+01:24:08.371257 db@janitor F·2 G·0
+01:24:08.371257 db@open done T·1.999ms
+01:24:08.386380 db@close closing
+01:24:08.390332 db@close done T·3.9518ms

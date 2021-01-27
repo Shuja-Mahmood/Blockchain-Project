@@ -1,0 +1,1 @@
+geth --networkid 4224 --datadir ".\Bootstrap\\" --nodiscover --http --http.port 8545 --port 30303 --http.corsdomain "*" --nat "any" --http.api eth,web3,personal,net --unlock "0x015fEA02fDf2AB7ef82bB32aB43eaBf57a33682C" --password ./password.sec --allow-insecure-unlock console

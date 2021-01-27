@@ -1,0 +1,1 @@
+geth --datadir ".\Node\\" --nodiscover --networkid 4224 --port 30304 --bootnodes "enode://3f1175bc1ddb110e30300aad7bdcd4bad9dab7b95b98ba4e2a915a6cd0b845f5180f4dbd9b2a055dd5309f160a5f31eca2ef54509c60411b47cb6834ffd74f06@127.0.0.1:30303?discport=0" --unlock "0x2752523078A90B1CB87b9d6Cb509579b3f7D0509" --password ./password.sec --ipcdisable console
