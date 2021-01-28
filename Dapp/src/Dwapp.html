@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing smart contract</title>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+    <script language="javascript" type="text/javascript" src="./abi.js"></script>
+    <script>
+        window.addEventListener('load', async () => {
+
+            var contract;
+            const contractAddress = "0xDa3d64A253e70A6A8EeEB77c6b7e3FcdC1B668F2";
+
+            // Modern dapp browsers...
+            if (window.ethereum)
+            {
+                window.web3 = new Web3(ethereum);
+                try
+                {
+                    // Request account access if needed
+                    await ethereum.enable();
+                    var message = await contractMessage();
+                    alert("Sucessful");
+                    var elm = document.getElementById("message");
+                    elm.innerHTML = message;
+                }
+                catch (error)
+                {
+                    // User denied account access...
+                    alert(error);
+                }
+            }
+            // Non-dapp browsers...
+            else
+            {
+                alert("Non-Ethereum browser");
+                console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+            }
+        });
+        </script>
+</head>
+<body>
+    <div id="message">
+        <button onclick="getdatafun()">View all Data</button>
+    </div>
+</body>
+<script>
+    function setdatafun( name, ttext)
+    {
+       
+       const contractMessage = async () => {
+           contract = new web3.eth.Contract(abi, contractAddress);
+           await contract.methods.setData(ttext,fname).call();
+       }
+       
+       
+    }
+    function getdatafun() 
+    {
+        const contractMessage = async () => 
+        {
+            contract2 = new web3.eth.Contract(abi, contractAddress);
+            let messagename = await contract2.methods.getUserN().call();
+            let messagedata = await contract2.methods.getUserData().call();
+            
+        }
+       
+        var i;
+        document.write("User Data","<br>","<br>");
+        for (i = 0; i < messagename.length; i++)
+        {
+            document.write(messagename[i],": ",messagedata[i],"<br>"); 
+        }
+    }
+</script>
+
+<form action="/action_page.php" method="get" id="form1">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="ttext">data:</label><br>
+    <input type="text" id="ttext" name="ttext">
+
+    <button onclick="setdatafun(fname,ttext)">Enter Data</button>
+</form>
+</html>
