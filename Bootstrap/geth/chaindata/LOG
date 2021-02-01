@@ -153,3 +153,44 @@
 02:32:58.566802 db@open done T·33.2843ms
 02:34:56.226521 db@close closing
 02:34:56.233491 db@close done T·6.9695ms
+=============== Feb 1, 2021 (PKT) ===============
+16:29:40.793030 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:29:40.814229 version@stat F·[3] S·2KiB[2KiB] Sc·[0.75]
+16:29:40.814229 db@open opening
+16:29:40.814229 journal@recovery F·1
+16:29:40.817208 journal@recovery recovering @29
+16:29:40.821580 version@stat F·[3] S·2KiB[2KiB] Sc·[0.75]
+16:29:40.851834 db@janitor F·5 G·0
+16:29:40.851834 db@open done T·37.6054ms
+17:27:47.521142 db@close closing
+17:27:47.547625 db@close done T·26.4829ms
+=============== Feb 1, 2021 (PKT) ===============
+17:27:56.623294 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:27:56.624306 version@stat F·[3] S·2KiB[2KiB] Sc·[0.75]
+17:27:56.625294 db@open opening
+17:27:56.625294 journal@recovery F·1
+17:27:56.630332 journal@recovery recovering @31
+17:27:56.640441 memdb@flush created L0@33 N·1025 S·54KiB "\x1c<k..L\xafl,v1085":"\xf4\x98J..\x83\x9c\xd7,v1080"
+17:27:56.643290 version@stat F·[4] S·56KiB[56KiB] Sc·[1.00]
+17:27:56.667277 db@janitor F·6 G·0
+17:27:56.667277 db@open done T·41.9828ms
+17:27:56.667277 table@compaction L0·4 -> L1·0 S·56KiB Q·1087
+17:27:56.678870 table@build created L1@36 N·726 S·42KiB "\x1c<k..L\xafl,v1085":"\xf4\x98J..\x83\x9c\xd7,v1080"
+17:27:56.678870 version@stat F·[0 1] S·42KiB[0B 42KiB] Sc·[0.00 0.00]
+17:27:56.680871 table@compaction committed F-3 S-14KiB Ke·0 D·357 T·13.5941ms
+17:27:56.681867 table@remove removed @28
+17:27:56.681867 table@remove removed @5
+17:27:56.681867 table@remove removed @2
+17:40:44.656133 db@close closing
+17:40:44.677172 db@close done T·21.0396ms
+=============== Feb 1, 2021 (PKT) ===============
+17:42:48.300917 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:42:48.301790 version@stat F·[0 1] S·42KiB[0B 42KiB] Sc·[0.00 0.00]
+17:42:48.301790 db@open opening
+17:42:48.301790 journal@recovery F·1
+17:42:48.305319 journal@recovery recovering @34
+17:42:48.321680 memdb@flush created L0@37 N·446 S·20KiB "\x1d@A..\x00C\xa6,v1533":"\x96 ;..\xc8\x01\xed,v1532"
+17:42:48.327073 version@stat F·[1 1] S·63KiB[20KiB 42KiB] Sc·[0.25 0.00]
+17:42:48.344939 db@janitor F·5 G·1
+17:42:48.344939 db@janitor removing table-33
+17:42:48.344939 db@open done T·43.1497ms

@@ -42,18 +42,19 @@ module.exports = {
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
     //
-    // development: {
-    //  host: "127.0.0.1",     // Localhost (default: none)
-    //  port: 8545,            // Standard Ethereum port (default: none)
-    //  network_id: "4224",       // Any network (default: none) [* -> 4224]
-    // },
+    development: {
+     host: "127.0.0.1",     // Localhost (default: none)
+     port: 8545,            // Standard Ethereum port (default: none)
+     network_id: "4224",       // Any network (default: none) [* -> 4224]
+     gas: 5000000
+    },
     // Another network with more advanced options...
     // advanced: {
     // port: 8545,             // Custom port [8777 -> 8545]
     // network_id: 4224,       // Custom network [1342 -> 4224]
     // gas: 8500000,           // Gas sent with each transaction (default: ~6700000)
     // gasPrice: 20000000000,  // 20 gwei (in wei) (default: 100 gwei)
-    // from: <address>,        // Account to send txs from (default: accounts[0])
+    // from: <account>,        // Account to send txs from (default: accounts[0])
     // websockets: true        // Enable EventEmitter interface for web3 (default: false)
     // },
     // Useful for deploying to a public network.

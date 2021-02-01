@@ -11,7 +11,7 @@
         window.addEventListener('load', async () => {
 
             var contract;
-            const contractAddress = "0xDa3d64A253e70A6A8EeEB77c6b7e3FcdC1B668F2";
+            const contractAddress = "0xe84eA8143292E5755536B1906DdDC7189E24c1b2";
 
             // Modern dapp browsers...
             if (window.ethereum)
@@ -21,10 +21,10 @@
                 {
                     // Request account access if needed
                     await ethereum.enable();
-                    var message = await contractMessage();
+                    // var message = await contractMessage();
                     alert("Sucessful");
-                    var elm = document.getElementById("message");
-                    elm.innerHTML = message;
+                    // var elm = document.getElementById("message");
+                    // elm.innerHTML = message;
                 }
                 catch (error)
                 {
