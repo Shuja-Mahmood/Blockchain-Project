@@ -12,7 +12,7 @@
 
             var contract;
             const contractAddress = "0xe84eA8143292E5755536B1906DdDC7189E24c1b2";
-
+            
             // Modern dapp browsers...
             if (window.ethereum)
             {
@@ -47,36 +47,53 @@
     </div>
 </body>
 <script>
-    function setdatafun( name, ttext)
+    function setdatafun(fname, ttext)
     {
-       
-       const contractMessage = async () => {
-           contract = new web3.eth.Contract(abi, contractAddress);
-           await contract.methods.setData(ttext,fname).call();
-       }
-       
-       
+        window.addEventListener('load', async () => 
+        {
+            const contractAddress = "0xe84eA8143292E5755536B1906DdDC7189E24c1b2";
+            
+            const contractMessage = async () => {
+                contract = new web3.eth.Contract(abi, contractAddress);
+                await contract.methods.setData(ttext,fname).call();
+            }
+            
+        });
     }
     function getdatafun() 
     {
-        const contractMessage = async () => 
-        {
-            contract2 = new web3.eth.Contract(abi, contractAddress);
-            let messagename = await contract2.methods.getUserN().call();
-            let messagedata = await contract2.methods.getUserData().call();
+        window.addEventListener('load', async () => {
+
+            const contractAddress = "0xe84eA8143292E5755536B1906DdDC7189E24c1b2";
             
-        }
-       
-        var i;
-        document.write("User Data","<br>","<br>");
-        for (i = 0; i < messagename.length; i++)
-        {
-            document.write(messagename[i],": ",messagedata[i],"<br>"); 
-        }
+            const contractMessageName = async () => 
+            {
+                contract2 = new web3.eth.Contract(abi, contractAddress);
+                let messagename = await contract2.methods.getUserN().call();
+                return messagename;
+            }
+            
+            const contractMessageData = async () => 
+            {
+                contract2 = new web3.eth.Contract(abi, contractAddress);
+                let messagedata = await contract2.methods.getUserData().call();
+                return messagedata;
+            }
+            
+            var name = await contractMessageName();
+            var data = await contractMessageData(); 
+    
+            var i;
+            document.write("User Data","<br>","<br>");
+            for (i = 0; i < name.length; i++)
+            {
+                document.write(name[i],": ",data[i],"<br>"); 
+            }
+        });
     }
 </script>
 
-<form action="/action_page.php" method="get" id="form1">
+<form>
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname"><br>
     <label for="ttext">data:</label><br>

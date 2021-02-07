@@ -218,3 +218,33 @@
 02:33:03.307417 db@open done T·36.8633ms
 02:34:53.956725 db@close closing
 02:34:53.964724 db@close done T·7.9993ms
+=============== Feb 5, 2021 (PKT) ===============
+00:41:51.723869 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:41:51.731879 version@stat F·[3] S·3KiB[3KiB] Sc·[0.75]
+00:41:51.731879 db@open opening
+00:41:51.732947 journal@recovery F·1
+00:41:51.737085 journal@recovery recovering @41
+00:41:51.743413 version@stat F·[3] S·3KiB[3KiB] Sc·[0.75]
+00:41:51.760870 db@janitor F·5 G·0
+00:41:51.760870 db@open done T·27.9932ms
+00:47:18.781377 db@close closing
+00:47:18.814446 db@close done T·33.0687ms
+=============== Feb 7, 2021 (PKT) ===============
+15:30:00.086594 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:30:00.100178 version@stat F·[3] S·3KiB[3KiB] Sc·[0.75]
+15:30:00.100178 db@open opening
+15:30:00.100178 journal@recovery F·1
+15:30:00.102948 journal@recovery recovering @43
+15:30:00.139484 memdb@flush created L0@45 N·7279 S·379KiB "\x05&n..\v\x19\x10,v7343":"\xf4\x98J..\x83\x9c\xd7,v7335"
+15:30:00.144446 version@stat F·[4] S·382KiB[382KiB] Sc·[1.00]
+15:30:00.166399 db@janitor F·6 G·0
+15:30:00.166399 db@open done T·66.2214ms
+15:30:00.166399 table@compaction L0·4 -> L1·0 S·382KiB Q·7344
+15:30:00.210491 table@build created L1@48 N·4901 S·282KiB "\x05&n..\v\x19\x10,v7343":"\xf4\x98J..\x83\x9c\xd7,v7335"
+15:30:00.210491 version@stat F·[0 1] S·282KiB[0B 282KiB] Sc·[0.00 0.00]
+15:30:00.212515 table@compaction committed F-3 S-99KiB Ke·0 D·2439 T·46.1154ms
+15:30:00.213492 table@remove removed @40
+15:30:00.213492 table@remove removed @5
+15:30:00.213492 table@remove removed @2
+15:42:24.779922 db@close closing
+15:42:24.815264 db@close done T·35.3418ms

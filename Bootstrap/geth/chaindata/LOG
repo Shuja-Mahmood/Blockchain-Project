@@ -194,3 +194,45 @@
 17:42:48.344939 db@janitor F·5 G·1
 17:42:48.344939 db@janitor removing table-33
 17:42:48.344939 db@open done T·43.1497ms
+=============== Feb 4, 2021 (PKT) ===============
+16:49:00.848941 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:49:00.865513 version@stat F·[1 1] S·63KiB[20KiB 42KiB] Sc·[0.25 0.00]
+16:49:00.865638 db@open opening
+16:49:00.865638 journal@recovery F·1
+16:49:00.870513 journal@recovery recovering @38
+16:49:00.890678 memdb@flush created L0@40 N·739 S·40KiB "H\x00&..Tm>,v2123":"r\x00\x00..\xf3\xd4D,v2269"
+16:49:00.895667 version@stat F·[2 1] S·104KiB[61KiB 42KiB] Sc·[0.50 0.00]
+16:49:00.917186 db@janitor F·5 G·0
+16:49:00.917186 db@open done T·51.5474ms
+18:18:51.432253 db@close closing
+18:18:51.447259 db@close done T·14.0047ms
+=============== Feb 5, 2021 (PKT) ===============
+00:41:33.583722 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:41:33.594162 version@stat F·[2 1] S·104KiB[61KiB 42KiB] Sc·[0.50 0.00]
+00:41:33.595159 db@open opening
+00:41:33.595159 journal@recovery F·1
+00:41:33.604439 journal@recovery recovering @41
+00:41:33.642046 memdb@flush created L0@43 N·5552 S·291KiB "\t\x19\x1e..\xc8&^,v7820":"\xf552..'=\xe0,v7825"
+00:41:33.647189 version@stat F·[3 1] S·396KiB[353KiB 42KiB] Sc·[0.75 0.00]
+00:41:33.678647 db@janitor F·6 G·0
+00:41:33.679674 db@open done T·84.515ms
+00:47:29.108220 db@close closing
+00:47:29.142788 db@close done T·34.5131ms
+=============== Feb 7, 2021 (PKT) ===============
+15:29:25.361534 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:29:25.370593 version@stat F·[3 1] S·396KiB[353KiB 42KiB] Sc·[0.75 0.00]
+15:29:25.371592 db@open opening
+15:29:25.371592 journal@recovery F·1
+15:29:25.376549 journal@recovery recovering @44
+15:29:25.395296 memdb@flush created L0@46 N·140 S·6KiB "\b\x05Y..\xe6\x11L,v7964":"\xdb\x14\xa5..\x03\xe7\xcb,v7966"
+15:29:25.400596 version@stat F·[4 1] S·402KiB[359KiB 42KiB] Sc·[1.00 0.00]
+15:29:25.421419 db@janitor F·7 G·0
+15:29:25.421419 db@open done T·49.8274ms
+15:29:25.421419 table@compaction L0·4 -> L1·1 S·402KiB Q·7968
+15:29:25.445418 table@build created L1@49 N·4924 S·285KiB "\b\x05Y..\xe6\x11L,v7964":"\xf552..'=\xe0,v7825"
+15:29:25.445418 version@stat F·[0 1] S·285KiB[0B 285KiB] Sc·[0.00 0.00]
+15:29:25.447417 table@compaction committed F-4 S-116KiB Ke·0 D·2679 T·24.9982ms
+15:29:25.448417 table@remove removed @43
+15:29:25.448417 table@remove removed @40
+15:29:25.448417 table@remove removed @37
+15:29:25.448417 table@remove removed @36
